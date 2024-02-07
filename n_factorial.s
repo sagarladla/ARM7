@@ -21,7 +21,7 @@ _start:
 factorial:
 	cmp	r1,	#0x01			/* compare if r1==1 */
 	beq	break				/* if zero flag is set break the loop */
-	mul	r2,	r2,	r1		/* r2 = r2 * r1 */
+	mul	r2,	r1,	r2		/* r2 = r2 * r1 */
 	sub	r1,	r1,	#0x01		/* r1 = r1 - 1 */
 	b	factorial			/* loop to factorial */
 
