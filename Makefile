@@ -1,21 +1,19 @@
-CC=arm-none-eabi-gcc
-CFLAGS= -c -Wall -O0
+CC=arm-none-eabi-as
+CFLAGS=-Wall
 
-all: add_with_carry.o n_factorial.o sub_with_borrow.o odd_even.o
-
-add_with_carry.o: add_with_carry.s
+add_with_carry: add_with_carry.s
 	$(CC) $(CFLAGS) $^ -o $@
 
 
-n_factorial.o: n_factorial.s
+n_factorial: n_factorial.s
 	$(CC) $(CFLAGS) $^ -o $@
 
 
-sub_with_borrow.o: sub_with_borrow.s
+sub_with_borrow: sub_with_borrow.s
 	$(CC) $(CFLAGS) $^ -o $@
 
 
-odd_even.o: odd_even.s
+odd_even: odd_even.s
 	$(CC) $(CFLAGS) $^ -o $@
 
 clean:
