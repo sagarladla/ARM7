@@ -16,7 +16,7 @@ _start:
 	mov	r3,	#0x03			/* multiplier					*/
 	
 	/* load data into registers */
-	ldr	r0,	=n			/* *r0 = &n;
+	ldr	r0,	=n			/* *r0 = &n;					*/
 	ldr	r1,	[r0],	#0x04		/* r1 = *r0; *(r0 + 4) or *r0++; (*r0 = &c)	*/
 	ldr	r2,	[r0]			/* r2 = *r0; (c)				*/
 	
