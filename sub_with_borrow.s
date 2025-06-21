@@ -1,6 +1,6 @@
 /*
 *	@target		:	ARM7
-*	@author		:	Sagar Ladla
+*	@author		:	Sagarvarman Ladla
 *	@program	:	Subtract 2 numbers with borrow
 */
 
